@@ -5,6 +5,7 @@ Bus::Bus() {
 
 Bus::~Bus() {}
 
-void Bus::connect_components(CPU *_cpu) {
+void Bus::connect_components(CPU *_cpu, WRAM *_wram) {
     cpu = _cpu;
+    wram = _wram;
 }

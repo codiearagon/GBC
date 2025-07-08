@@ -5,7 +5,8 @@
 
 GBC::GBC() {
     cpu.connect_bus(&bus);
-    bus.connect_components(&cpu);
+    wram.connect_bus(&bus);
+    bus.connect_components(&cpu, &wram);
 }
 
 GBC::~GBC() {
@@ -26,7 +27,6 @@ void GBC::load_rom(std::string file_name) {
     file.close();
 
     for(long i = 0; i < size; ++i) {
-        // memory->write(0x200 + i, buffer[i]);
     }
 
     delete[] buffer;

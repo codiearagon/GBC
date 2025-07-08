@@ -4,6 +4,7 @@
 
 #include "cpu.h"
 #include "bus.h"
+#include "wram.h"
 
 class GBC {
     public:
@@ -13,5 +14,6 @@ class GBC {
         void load_rom(std::string file_name);
     private:
         CPU cpu;
+        WRAM wram;
         Bus bus;
 };

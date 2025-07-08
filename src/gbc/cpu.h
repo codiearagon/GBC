@@ -19,7 +19,6 @@ struct opcode_info {
     char c;
 };
 
-
 class CPU {
     public:
         CPU();
