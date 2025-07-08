@@ -3,6 +3,14 @@
 #include <fstream>
 #include <iostream>
 
+GBC::GBC() {
+    cpu.connect_bus(&bus);
+    bus.connect_components(&cpu);
+}
+
+GBC::~GBC() {
+}
+
 void GBC::load_rom(std::string file_name) {
     std::ifstream file(file_name, std::ios::binary | std::ios::ate);
 

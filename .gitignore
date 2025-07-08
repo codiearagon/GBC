@@ -2,4 +2,6 @@ src/include
 src/lib
 SDL2.dll
 .vscode/
+.bak
+assets
 main.exe

@@ -2,7 +2,16 @@
 
 #include <string>
 
+#include "cpu.h"
+#include "bus.h"
+
 class GBC {
     public:
+        GBC();
+        ~GBC();
+        
         void load_rom(std::string file_name);
+    private:
+        CPU cpu;
+        Bus bus;
 };

@@ -1,4 +1,4 @@
-SOURCES = main.cpp src/gbc/gbc.cpp
+SOURCES = main.cpp src/gbc/gbc.cpp src/gbc/cpu.cpp src/gbc/bus.cpp
 
 all:
 	g++ -I src/include -I src/gbc -L src/lib -o main $(SOURCES) -lmingw32 -lSDL2main -lSDL2
