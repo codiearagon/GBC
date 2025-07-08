@@ -1,5 +1,7 @@
 #pragma once
 
+#include <array>
+
 #include "bus.h"
 
 class Bus;
@@ -13,5 +15,5 @@ class WRAM {
     private:
         Bus *bus;
 
-        uint8_t data[32768]; // 32 kb of ram
+        std::array<uint8_t, 32768> data;
 };
