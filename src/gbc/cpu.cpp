@@ -1,7 +1,5 @@
 #include "cpu.h"
 
-#include <nlohmann/json.hpp>
-
 CPU::CPU() {
     initialize_opcode_info();
 }

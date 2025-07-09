@@ -4,20 +4,10 @@
 #include <unordered_map>
 #include <vector>
 
+#include "opcode_info.h"
 #include "bus.h"
 
 class Bus;
-
-// does nothing except provide information, mainly used for debugging.
-struct opcode_info {
-    std::string mnemonic;
-    int bytes;
-    std::string ticks;
-    char z;
-    char n;
-    char h;
-    char c;
-};
 
 class CPU {
     public:
